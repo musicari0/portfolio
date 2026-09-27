@@ -105,6 +105,7 @@
   }
   .record:hover .disc, .record:focus-within .disc, .record.out .disc { transform: translateY(-26%); }
   .cover {
+    container-type: inline-size;
     aspect-ratio: 1; background: var(--c); color: var(--ink, var(--white));
     padding: clamp(18px, 2.4vw, 32px); display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;
   }
@@ -235,7 +236,7 @@
     <article class="record" style="--c: var(--night)">
       <div class="sleeve"><span class="disc" aria-hidden="true"></span>
         <div class="cover top-set"><div class="top"><span>FRM 02</span><span>Las Mercedes</span></div>
-          <h3 class="x" style="--size: clamp(44px, 7.4vw, 116px)"><span class="wide">5</span><span class="cond">Continentes</span></h3></div>
+          <h3 class="x" style="--size: min(19.5cqw, 116px)"><span class="wide">5</span><span class="cond">Continentes</span></h3></div>
       </div>
       <div class="liner">
         <p class="role">Curaduría y diseño ambiental</p>
@@ -259,7 +260,7 @@
     <article class="record" style="--c: var(--red)">
       <div class="sleeve"><span class="disc" aria-hidden="true"></span>
         <div class="cover top-set"><div class="top"><span>FRM 04</span><span>Boxing / Running / Lobby</span></div>
-          <h3 class="x swiitch" style="--size: clamp(40px, 6.6vw, 100px); white-space: nowrap"><span class="wide">SW//</span><span class="cond">TCH&nbsp;Gym</span></h3></div>
+          <h3 class="x swiitch" style="--size: min(15.8cqw, 100px); white-space: nowrap"><span class="wide">SW//</span><span class="cond">TCH&nbsp;Gym</span></h3></div>
       </div>
       <div class="liner">
         <p class="role">Curaduría musical</p>
