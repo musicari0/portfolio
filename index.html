@@ -99,7 +99,7 @@
   .disc {
     position: absolute; z-index: -1; top: 4%; left: 4%; width: 92%; aspect-ratio: 1; border-radius: 50%;
     background:
-      radial-gradient(circle, var(--c) 0 15%, #0b0b0b 15.5% 16.5%, transparent 17%),
+      radial-gradient(circle, var(--label, var(--c)) 0 15%, #0b0b0b 15.5% 16.5%, transparent 17%),
       repeating-radial-gradient(circle, #151515 0 1px, #222 1px 3px);
     transform: translateY(-7%); transition: transform .9s var(--ease);
   }
@@ -220,7 +220,7 @@
   </div>
 
   <div class="shelf">
-    <article class="record" style="--c: var(--amber); --ink: var(--black)">
+    <article class="record" style="--c: var(--black); --ink: var(--amber); --label: var(--amber)">
       <div class="sleeve"><span class="disc" aria-hidden="true"></span>
         <div class="cover"><div class="top"><span>FRM 01</span><span>El Consejo, Aragua</span></div>
           <h3 class="x"><span class="light cond">Ron</span><span class="wide">Santa</span><span class="cond">Teresa</span></h3></div>
@@ -235,7 +235,7 @@
     <article class="record" style="--c: var(--yellow); --ink: var(--black)">
       <div class="sleeve"><span class="disc" aria-hidden="true"></span>
         <div class="cover top-set"><div class="top"><span>FRM 02</span><span>Marca y eventos</span></div>
-          <h3 class="x" style="--size: clamp(64px, 13vw, 190px)"><span class="wide">P.A.N.</span></h3></div>
+          <h3 class="x" style="--size: clamp(56px, 10vw, 150px)"><span class="wide">P.A.N.</span></h3></div>
       </div>
       <div class="liner">
         <p class="role">Identidad sonora de eventos</p>
