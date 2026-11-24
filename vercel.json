@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "musicari0.vercel.app" }], "destination": "https://musicari0.com/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "portfolio-one-azure-16.vercel.app" }], "destination": "https://musicari0.com/:path*", "permanent": true }
+  ]
+}
